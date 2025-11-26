@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TP Generator - Inline Fix</title>
+
+<style>
+  body { font-family: sans-serif; background:#2c3344; color:white; padding:20px; }
+  .card { background:white; color:black; padding:15px; margin-bottom:20px; border-radius:8px; }
+  #canvas-container {
+    width:100% !important;
+    height:500px !important;
+    min-height:500px !important;
+    background:#ddd;
+  }
+  .debug-log { background:black; color:#0f0; padding:10px; height:200px; overflow-y:scroll; }
+</style>
+
+</head>
+
+<body>
+<h1>TP Generator Test (Inline Canvas Height Fixed)</h1>
+
+<div class="card">
+  <div id="canvas-container"></div>
+</div>
+
+<div class="card">
+  <button onclick="document.getElementById('debugLog').textContent=''">Clear Log</button>
+  <pre id="debugLog" class="debug-log"></pre>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.158.0/examples/js/controls/OrbitControls.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
