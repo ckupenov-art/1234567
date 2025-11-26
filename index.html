@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TP Generator Fullscreen</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>TP Generator Fullscreen Canvas</h1>
+
+<div class="card">
+  <h2>3D View</h2>
+
+  <!-- FINAL FIX: FULL OVERRIDE -->
+  <div id="canvas-container"
+    style="
+      width:100% !important;
+      height:calc(100vh - 260px) !important;
+      min-height:450px !important;
+      display:block !important;
+      border:1px solid #555;
+    ">
+  </div>
+</div>
+
+<div class="card">
+  <button onclick="document.getElementById('debugLog').textContent=''">Clear Log</button>
+  <pre id="debugLog" class="debug-log"></pre>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.158.0/examples/js/controls/OrbitControls.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
